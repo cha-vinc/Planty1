@@ -1,0 +1,488 @@
+/*Import de la typo via google front et application sur le site */
+
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400..800&display=swap');
+body * {
+    font-family: 'syne', sans-serif;
+ }
+
+ /*Ajout des couleurs principales du thème*/
+ 
+ :root {
+   --main-color: #ECE2DA; /* var(--main-color) */
+   --second-color: #3B8E46; /* var(--second-color) */
+   --third-color : #D2776A; /* var(--third-color)*/
+   --bouton-hover: #C02E44; /* var(--bouton-hover) */
+   --bouton-page: #E0B9B4; /* var(--bouton-page) */
+   --bouton-nav: #DC9F96; /* var(--bouton-nav) */
+   --black-color : #000000; /* var(--black-color)*/
+   --white-color : #FFFFFF; /* var(--white-color) */
+   
+ }
+ 
+
+
+ /*HEADER*/
+
+ header .boutonrencontrer a:hover{
+   font-size: 13px !important;  
+   font-weight: 700;
+ }
+
+ .boutoncommande{
+   order: 3;
+   
+ }
+
+
+
+header .menu-link.admincss {
+   font-family: "syne";
+   margin-top: 26px;
+
+}
+
+@media screen and (max-width:922px){
+   header .menu-link.admincss {
+      margin-top: 0px;
+      margin-left: 5px;
+   }
+}
+
+header .menu-link.admincss:hover {
+   font-size: 13px !important;  
+   font-weight: 700;
+
+}
+
+
+ header .boutoncommande a {
+   background-color: var(--bouton-nav);
+   color: var(--white-color) !important; 
+} 
+
+header .boutoncommande a:hover {
+   background-color: var(--bouton-hover);
+}
+
+@media screen and (max-width: 922px) {
+   header .boutoncommande a {
+      background-color: var(--bouton-nav) !important;
+      color: var(--white-color) !important; 
+   }   
+   header .boutoncommande a:hover {
+      background-color: var(--bouton-hover) !important;
+   }
+}
+
+
+ /*FOOTER*/
+
+ footer {
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   flex-wrap: wrap;
+   background-color: var(--white-color);
+   padding-top: 20px;
+}
+
+footer ::marker {
+   color: var(--white-color);
+   
+}
+
+/* PAGE D'ACCUEIL */
+
+
+.wp-block-uagb-container.uagb-block-0613e694.backgroundimg figure.imgmain{
+   background-image: url('../../../uploads/2024/04/Group-4.png'), url('../../../uploads/2024/04/Group-3.png') !important;
+   background-repeat: no-repeat, no-repeat;
+   background-position: 30% 50%, 70% 50%;
+} /*Pour que ça fonctionne mettre bien le chemin dans url()*/
+
+@media screen and (max-width: 700px) {
+   
+   .wp-block-uagb-container.uagb-block-0613e694.backgroundimg figure.imgmain{
+      background-image: none, none !important;
+   }
+   }
+   
+
+.cannettefooter{
+   background-color: #FFFFFF;
+}
+
+@media screen and (max-width: 922px){
+   .wp-block-uagb-container.uagb-is-root-container {
+      text-align: center;
+      padding-bottom: 30px;
+   }
+   .wp-block-column.is-layout-flow.wp-block-column-is-layout-flow{
+      padding-bottom: 1px;
+   }
+}
+   
+
+/* PAGE NOUS RENCONTRER */
+
+         /*Feuille de l'équipe*/
+
+
+   .equipebackground {
+      background-color: var(--white-color) ; 
+   }
+
+@media screen and (max-width: 600px) {
+   
+.wp-block-uagb-container.uagb-block-9d818dc8{
+   background-image: none;
+}
+
+.wp-block-uagb-container.uagb-block-dc9d9f07{
+   background-image: none;
+}
+}
+
+@media screen and (max-width: 1060px) {
+.wp-block-uagb-container.uagb-block-8ca64b79{
+   background-image: none;
+}
+
+}
+
+         /* Formulaire de contact */
+
+main .wp-block-contact-form-7-contact-form-selector{
+   width: 383px ;
+   border-radius: 7px;
+}
+
+form {
+   display: flex;
+   flex-direction: column;
+   flex-wrap: wrap;
+   align-content: center;
+   align-items: center;
+   width: 100%;
+   padding-inline: 60px;
+}
+
+.espacement{
+   margin-bottom: 20px;
+}
+
+
+/* PAGE COMMANDER */
+
+
+.secondepartie label {
+   color: white;
+}
+
+ /*Formulaire de pré-commande*/
+
+
+ .premierepartie{
+   border-top: 1px solid white;
+   border-bottom: 1px solid white;
+   padding-bottom: 5%;
+   width: 100%;
+
+}
+
+ .premierepartie h2{
+   font-weight: 700;
+   font-size: 30px;
+   color: white;
+   margin-top: 40px;
+ }
+
+ .secondepartie h2{
+   font-weight: 700;
+   font-size: 30px;
+   color: white;
+ }
+
+ .secondepartie{
+   margin-top: 50px;
+   width: 100%;
+ }
+
+ .separation{
+   border-right: 1px solid white;
+   padding-right: 15%;
+   margin-RIGHT : 15% ;
+ }
+
+
+      /* Mise en place du formulaire*/
+
+ .fruits {
+   display: flex;
+   flex-wrap: wrap;
+   flex-direction: row;
+   justify-content: space-between;
+   align-items: center;
+}
+
+
+ .fruit1{
+   display: flex;
+   flex-direction: column;
+   width: 25%;
+ }
+
+ .fruit2{
+   display: flex;
+   flex-direction: column;
+   width: 25%;
+
+ }
+
+ .fruit3{
+   display: flex;
+   flex-direction: column;
+   width: 25%;
+
+ }
+
+ .fruit4{
+   display: flex;
+   flex-direction: column;
+   width: 22%;
+
+ }
+
+.secondepartie{
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+
+}
+
+ .informations{
+   display: flex;
+   flex-direction: column;
+ }
+
+ .livraison{
+   display: flex;
+   flex-direction: column;
+
+
+ }
+
+ /*Fraise*/
+
+  .fraise1 {
+   margin-top: 20PX;
+   margin-right: 30px;
+   margin-bottom: 30px;
+   font-family: "Syne" ;
+   font-weight: 800;
+   font-size: 20px;
+   color:#FFFFFF;
+   display: flex;
+   background-image:url("../../../uploads/2024/04/jeremy-bezanger-0QgbyZdhX7k-unsplash-1.png") !important;
+ }
+
+ .fraise1  label {
+   font-family: "syne";
+   font-weight: 800;
+   color: white;
+   display:flex;
+   align-items: center;
+   justify-content: center;  
+   width: 100%; 
+   height: 128.36px;
+}
+
+.nbfraise{
+   width: 23%;
+   height: 56px;
+   margin-left: 33%;
+
+}
+
+ /*Pamplemousse*/
+
+ .pamplemouse1{
+   margin-top: 20PX;
+   margin-right: 30px;
+   margin-bottom: 30px;
+   display: flex;
+   background-image:url("../../../uploads/2024/04/estudio-bloom-tOitjphtIXU-unsplash-1.png") !important;
+ }
+
+ .pamplemouse1 label{
+      font-family: "syne";
+      font-weight: 800;
+      color: white;
+      display:flex;
+      align-items: center;
+      justify-content: center;   
+      width: 100%;
+      height: 128.36px;
+}
+
+.nbpamplemousse{
+   width: 23%;
+   height: 56px;
+   margin-left: 33%;
+
+}
+
+ /*Framboise*/
+
+ .framboise1{
+   margin-top: 20PX;
+   margin-right: 30px;
+   margin-bottom: 30px;
+   display: flex;
+   background-image:url("../../../uploads/2024/04/rodion-kutsaev-4k8xEFW4_3Q-unsplash-1.png") !important;
+ }
+
+ .framboise1 label {
+   font-family: "syne";
+   font-weight: 800;
+   color: white;
+   display:flex;
+   align-items: center;
+   justify-content: center;   
+   width: 100%;
+   height: 128.36px;
+}
+
+.nbframboise{
+   width: 23%;
+   height: 56px;
+   margin-left: 33%;
+
+}
+
+ /*Citron*/
+
+ .citron1{
+   margin-top: 20PX;
+   margin-bottom: 30px;
+   display: flex;
+   background-image:url("../../../uploads/2024/04/estudio-bloom-ezqnxsqUZ80-unsplash-1.png") !important;
+ }
+
+ .citron1 label {
+   font-family: "syne";
+   font-weight: 800;
+   color: white;
+   display:flex;
+   align-items: center;
+   justify-content: center;   
+   width: 100%;
+   height: 128.36px;
+}
+
+.nbcitron{
+   width: 25%;
+   height: 56px;
+   margin-left: 35%;
+}
+
+/*Informations*/
+
+.informations h2 {
+   margin-top: 40px;
+
+}
+
+.info1{
+   margin-bottom: 8%;
+   border-radius: 7px;
+}
+
+.info2{
+   margin-bottom: 8%;
+   border-radius: 7px;
+}
+
+.info3{
+   border-radius: 7px;
+}
+
+/*Livraisons*/
+
+.livraison h2{
+   margin-top: 40px;
+}
+
+.livraison1{
+   margin-bottom: 8%;
+   border-radius: 7px;
+}
+
+.livraison2{
+   margin-bottom: 8%;
+   border-radius: 7px;
+}
+
+.livraison3{
+   border-radius: 7px;
+}
+
+
+/* Bouton envoyer*/
+
+.wpcf7-submit {
+   margin-top: 30px;
+   margin-bottom: 30px;
+}
+
+/*Media screen page commander */
+
+@media screen and (max-width: 600px) {
+
+   .premierepartie{
+      text-align: center;
+   }
+   .premierepartie h2{
+      text-align: center;
+   }
+   .fruit1{
+      text-align: center;
+      width: 80%;
+   }
+   .fruit2{
+      width: 80%;
+   }
+   .fruit3{
+      width: 80%;
+   }
+   .fruit4{
+      width: 70%;
+      MARGIN-RIGHT: 10%;
+
+   }
+   .secondepartie h2{
+      text-align: center;
+   }
+   .secondepartie{
+      text-align: center;
+     }
+   .fruits{
+      flex-direction: column;
+   }
+   .nbcitron{
+      margin-left: 40%;
+   }
+   .wpcf7-submit {
+      margin-left: 5%;  }
+
+  
+}
+
+@media screen and (max-width: 1060px) {
+   
+
+   .separation{
+      border-right: none;
+    }
+   
+   }
